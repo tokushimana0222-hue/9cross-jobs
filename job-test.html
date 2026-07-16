@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+     ▼▼▼ ここがLinkedInカードに出る部分（求人ごとに差し替え）▼▼▼
+     ・og:url と og:image は「絶対URL」必須（相対パス不可）
+     ・画像は 1200 × 630 px（1.91:1）
+     ・公開後、修正したら LinkedIn Post Inspector で再クロール
+     ============================================================ -->
+<title>【SaaS営業】急成長スタートアップのフィールドセールス｜9CROSS</title>
+<meta name="description" content="20代で事業の中核を担う。裁量とスピードのある環境で営業キャリアを加速。年収500〜800万円／東京・リモート可。">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="9CROSS株式会社">
+<meta property="og:title" content="【SaaS営業】急成長スタートアップのフィールドセールス">
+<meta property="og:description" content="20代で事業の中核を担う。年収500〜800万円／東京・リモート可。">
+<meta property="og:url" content="https://careers.9cross.co.jp/jobs/test-saas-sales/"><!-- ← 実際の公開URLに差し替え -->
+<meta property="og:image" content="https://careers.9cross.co.jp/jobs/test-saas-sales/ogp.png"><!-- ← 同ディレクトリの ogp.png に差し替え -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<!-- ▲▲▲ 差し替えここまで ▲▲▲ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#0F1628;
+    --ink-soft:#3A4257;
+    --muted:#6B7488;
+    --line:#E3E7F0;
+    --bg:#F5F7FB;
+    --surface:#FFFFFF;
+    --accent:#2B4EE6;
+    --accent-deep:#1B34B0;
+    --accent-tint:#EDF1FF;
+    --gold:#C9A24B;
+    --radius:16px;
+    --maxw:960px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Noto Sans JP",system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .label{
+    font-family:"Space Grotesk",sans-serif;
+    font-weight:700;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    font-size:12px;
+    color:var(--accent);
+  }
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:20;
+    background:rgba(245,247,251,.82);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:19px;letter-spacing:.02em}
+  .logo .mark{
+    width:26px;height:26px;display:grid;place-items:center;
+    color:#fff;background:var(--ink);border-radius:7px;
+    font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:15px;
+  }
+  .logo .mark::after{content:"×"}
+  .logo b{color:var(--accent)}
+  .nav-cta{
+    font-size:13px;font-weight:700;color:var(--ink);
+    border:1px solid var(--line);background:var(--surface);
+    padding:9px 16px;border-radius:999px;text-decoration:none;transition:.2s;
+  }
+  .nav-cta:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;overflow:hidden;padding:64px 0 48px}
+  .hero::before{
+    content:"×";
+    position:absolute;right:-60px;top:-90px;
+    font-size:420px;line-height:1;font-weight:700;
+    color:var(--accent);opacity:.05;pointer-events:none;
+    font-family:"Space Grotesk",sans-serif;
+  }
+  .eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+  .eyebrow .test-tag{
+    font-size:11px;font-weight:700;color:var(--gold);
+    border:1px solid var(--gold);border-radius:999px;padding:2px 9px;letter-spacing:.04em;
+  }
+  h1{
+    font-size:clamp(28px,5vw,44px);
+    font-weight:900;line-height:1.32;letter-spacing:.01em;
+    max-width:18ch;
+  }
+  .lede{margin-top:18px;font-size:clamp(15px,2.2vw,18px);color:var(--ink-soft);max-width:44ch}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .chip{
+    display:inline-flex;align-items:center;gap:7px;
+    background:var(--surface);border:1px solid var(--line);
+    padding:9px 15px;border-radius:999px;font-size:14px;font-weight:500;
+  }
+  .chip svg{width:15px;height:15px;color:var(--accent)}
+  .chip.salary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+  .chip.salary svg{color:#fff}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-weight:700;font-size:15px;text-decoration:none;
+    padding:14px 28px;border-radius:999px;transition:.2s;
+  }
+  .btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 22px rgba(43,78,230,.28)}
+  .btn-primary:hover{background:var(--accent-deep);transform:translateY(-1px)}
+  .btn-ghost{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* ---------- stats ---------- */
+  .stats{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+    background:var(--ink);border-radius:var(--radius);overflow:hidden;
+    margin-top:8px;
+  }
+  .stat{padding:26px 22px;position:relative}
+  .stat + .stat::before{content:"";position:absolute;left:0;top:22px;bottom:22px;width:1px;background:rgba(255,255,255,.12)}
+  .stat .num{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:clamp(24px,4vw,34px);color:#fff;line-height:1}
+  .stat .num span{color:#7E97FF;font-size:.6em}
+  .stat .cap{margin-top:8px;font-size:13px;color:rgba(255,255,255,.62)}
+
+  /* ---------- sections ---------- */
+  main{padding:56px 0 40px}
+  section{margin-bottom:44px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+  .sec-head .idx{font-family:"Space Grotesk",sans-serif;font-weight:700;color:var(--accent);font-size:14px}
+  .sec-head h2{font-size:21px;font-weight:900;letter-spacing:.01em}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+  section p{color:var(--ink-soft);font-size:15.5px}
+  .list{list-style:none;margin-top:6px}
+  .list li{position:relative;padding-left:26px;margin-bottom:12px;color:var(--ink-soft);font-size:15.5px}
+  .list li::before{
+    content:"×";position:absolute;left:2px;top:1px;
+    color:var(--accent);font-weight:700;
+    font-family:"Space Grotesk",sans-serif;
+  }
+  .terms{width:100%;border-collapse:collapse}
+  .terms th,.terms td{text-align:left;padding:15px 4px;border-bottom:1px solid var(--line);font-size:15px;vertical-align:top}
+  .terms th{width:34%;color:var(--muted);font-weight:700;white-space:nowrap}
+  .terms td{color:var(--ink)}
+  .terms tr:last-child th,.terms tr:last-child td{border-bottom:none}
+
+  /* ---------- closing CTA ---------- */
+  .closing{
+    background:linear-gradient(135deg,var(--ink) 0%,#1a2544 100%);
+    border-radius:20px;padding:44px 32px;text-align:center;position:relative;overflow:hidden;
+  }
+  .closing::before{content:"×";position:absolute;left:-30px;bottom:-70px;font-size:240px;font-weight:700;color:rgba(255,255,255,.05);font-family:"Space Grotesk",sans-serif}
+  .closing h2{color:#fff;font-size:clamp(20px,3.5vw,26px);font-weight:900;position:relative}
+  .closing p{color:rgba(255,255,255,.72);margin:12px auto 26px;max-width:40ch;position:relative}
+  .closing .btn-primary{position:relative;background:#fff;color:var(--ink);box-shadow:0 8px 22px rgba(0,0,0,.25)}
+  .closing .btn-primary:hover{background:#EDF1FF;color:var(--accent-deep)}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line);padding:28px 0;margin-top:32px}
+  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:13px}
+
+  @media(max-width:620px){
+    .stats{grid-template-columns:1fr}
+    .stat + .stat::before{top:0;left:22px;right:22px;bottom:auto;width:auto;height:1px}
+    .terms th{width:40%}
+  }
+  @media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <div class="logo"><span class="mark"></span>9<b>CROSS</b></div>
+    <a class="nav-cta" href="#apply">この求人を相談する</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">
+      <span class="label">SaaS Sales / High-Class</span>
+      <span class="test-tag">TEST 求人サンプル</span>
+    </div>
+    <h1>急成長SaaSスタートアップの<br>フィールドセールス</h1>
+    <p class="lede">20代で事業の中核を担う。裁量とスピードのある環境で、営業キャリアを一段引き上げる。</p>
+
+    <div class="chips">
+      <span class="chip salary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        年収 500〜800万円
+      </span>
+      <span class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        東京・リモート可
+      </span>
+      <span class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        正社員・中途
+      </span>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#apply">応募・相談してみる
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="#detail">仕事内容をみる</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><div class="num">28<span>歳</span></div><div class="cap">メンバー平均年齢</div></div>
+    <div class="stat"><div class="num">200<span>%</span></div><div class="cap">前年比の事業成長率</div></div>
+    <div class="stat"><div class="num">上限<span>なし</span></div><div class="cap">インセンティブ制度</div></div>
+  </div>
+</div>
+
+<main class="wrap" id="detail">
+
+  <section>
+    <div class="sec-head"><span class="idx">01</span><h2>仕事内容</h2></div>
+    <div class="card">
+      <p>拡大フェーズにある自社SaaSプロダクトの新規開拓を担う、フィールドセールスのポジションです。インバウンドリードへの商談から、経営層向けの提案・クロージングまでを一気通貫で担当します。</p>
+      <ul class="list" style="margin-top:18px">
+        <li>マーケ／インサイドセールスから供給される商談の対応・受注</li>
+        <li>顧客の課題ヒアリングと、導入プランの設計・提案</li>
+        <li>受注後のオンボーディング設計（カスタマーサクセスと連携）</li>
+        <li>商談データをもとにした営業プロセスの改善提案</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="idx">02</span><h2>求める人物像</h2></div>
+    <div class="card">
+      <ul class="list">
+        <li>無形商材／法人営業の経験（目安2年以上、SaaS未経験可）</li>
+        <li>変化の速い環境を前向きに楽しめる方</li>
+        <li>数字と向き合い、自ら改善を回せる方</li>
+        <li>将来的にマネジメントや事業づくりに関わりたい方</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="idx">03</span><h2>待遇・条件</h2></div>
+    <div class="card">
+      <table class="terms">
+        <tr><th>雇用形態</th><td>正社員（試用期間3ヶ月）</td></tr>
+        <tr><th>想定年収</th><td>500万〜800万円（経験・スキルを考慮／インセンティブ別途）</td></tr>
+        <tr><th>勤務地</th><td>東京都内オフィス／リモート併用可</td></tr>
+        <tr><th>勤務時間</th><td>フレックスタイム制（コアタイム 11:00〜16:00）</td></tr>
+        <tr><th>休日休暇</th><td>完全週休2日制、年末年始、有給、慶弔休暇</td></tr>
+        <tr><th>福利厚生</th><td>社会保険完備、リモート手当、書籍・学習支援制度</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="apply">
+    <div class="closing">
+      <h2>まずは話を聞いてみませんか？</h2>
+      <p>応募前の情報収集だけでも大丈夫です。9CROSSのキャリアアドバイザーが、あなたに合うかを一緒に整理します。</p>
+      <a class="btn btn-primary" href="#">キャリア相談を申し込む
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="logo" style="font-size:16px"><span class="mark" style="width:22px;height:22px;font-size:13px"></span>9<b>CROSS</b></div>
+    <span>© 9CROSS株式会社 ｜ これはLinkedInカード検証用のテスト求人ページです</span>
+  </div>
+</footer>
+
+</body>
+</html>
